@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 
 import { QRCode } from './components/qrcode';
+import { QRCode as QRCodeReact } from './components/qrcode.react';
 
 function App() {
   const [value, setValue] = useState<string>("https://www.google.com/");
@@ -41,7 +42,9 @@ function App() {
             <div className="cell">
               <QRCode fileName="test" value={value} />
             </div>
-            <div className="cell"></div>
+            <div className="cell">
+              <QRCodeReact fileName="test" value={value} />
+            </div>
           </div>
         </div>
       </div>
