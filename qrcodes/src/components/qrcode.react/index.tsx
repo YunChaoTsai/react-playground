@@ -1,4 +1,4 @@
-import { QRCodeCanvas, QRCodeSVG } from "qrcode.react";
+import { QRCodeCanvas } from "qrcode.react";
 import { useRef } from "react";
 
 import type { FC } from "react";
